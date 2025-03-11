@@ -14,7 +14,7 @@ def load_data():
 
     response = requests.get(url, params=parms, headers=header)
     data = response.json()
-
+    # I HAVE ERROR HERE
     if not data: f"<h2 style='color: red;'>The animal '{name}' doesn't exist.</h2>\n"  # Print error message
         #return None  # Return None when no animal is found
 
